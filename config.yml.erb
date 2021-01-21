@@ -1,15 +1,12 @@
 receivers:
   otlp:
     protocols:
-      grpc:
       http:
-        endpoint: localhost:55681
+        endpoint: 127.0.0.1:55681
   jaeger:
     protocols:
-      grpc:
-      thrift_binary:
-      thrift_compact:
       thrift_http:
+        endpoint: 127.0.0.1:14268
 
 processors:
   batch:
@@ -19,7 +16,7 @@ exporters:
   logging:
     logLevel: debug
   datadog/otlp:
-    hostname: localhost
+    hostname: drogus.dev
     env: prod
     service: drogus-dev-oltp
     version: 0.0.1
@@ -32,7 +29,7 @@ exporters:
       - "receiver_type:otlp"
 
   datadog/jaeger:
-    hostname: localhost
+    hostname: drogus.dev
     env: prod
     service: drogus-dev-jaeger
     version: 0.0.1

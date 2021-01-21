@@ -11,6 +11,8 @@ In one terminal:
 
 ```
 erb config.yml.erb > config.yml && otel-collector --config config.yml
+# or with docker
+erb config.yml.erb > config.yml && docker-compose up
 ```
 
 In another terminal:
