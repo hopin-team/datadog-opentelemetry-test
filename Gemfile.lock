@@ -1,0 +1,31 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    google-protobuf (3.14.0)
+    opentelemetry-api (0.12.1)
+    opentelemetry-common (0.12.0)
+      opentelemetry-api (~> 0.12.0)
+    opentelemetry-exporter-jaeger (0.12.0)
+      opentelemetry-api (~> 0.12.0)
+      opentelemetry-common (~> 0.12.0)
+      thrift
+    opentelemetry-exporter-otlp (0.12.1)
+      google-protobuf (~> 3.7)
+      opentelemetry-api (~> 0.12.0)
+      opentelemetry-common (~> 0.12.0)
+    opentelemetry-sdk (0.12.1)
+      opentelemetry-api (~> 0.12.0)
+      opentelemetry-common (~> 0.12.0)
+    thrift (0.13.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  opentelemetry-api
+  opentelemetry-exporter-jaeger
+  opentelemetry-exporter-otlp
+  opentelemetry-sdk
+
+BUNDLED WITH
+   2.1.4
