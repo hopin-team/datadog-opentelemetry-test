@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    google-protobuf (3.14.0)
+    google-protobuf (3.19.2)
     opentelemetry-api (0.12.1)
     opentelemetry-common (0.12.0)
       opentelemetry-api (~> 0.12.0)
